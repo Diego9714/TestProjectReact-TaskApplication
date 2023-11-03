@@ -12,3 +12,12 @@ Tambien es importante recordar que:
 
 * Es recomendable separar todo en componentes por separado, ya que de esa forma el codigo esta mas organizado y asi podemos saber con mayor exactitud donde realizar cada actividad.
 
+# Listar Tareas
+
+En nuestro archivo App.js haremos uso del useState para crear un estado que se va a encargar de almacenar en una variable nuestra lista de tareas, ademas de establecer por defecto una lista con ciertos valores la cual ira creciendo a medida que vayamos creando e integrando nuevas tareas.
+
+Luego crearemos una funcion (esta se llamada createNewTask) que se encargara de añadir a nuestra lista de tareas los nuevas tareas que queremos agregar. Dicha función es creada en nuestro archivo App.jsx y es enviada mediante un prop a nuestro archivo taskCreator , luego la incluimos dentro de nuestra funcion handleSubmit y le enviamos el valor de la nueva tarea que acabamos de crear. Una vez recibido dicho valor lo que hacemos es crear un nuevo array con los valores que ya teniamos establecidos por defecto y le añadimos el valor que recien creamos.
+
+IMPORTANTE: Recordemos que en react cuando queremos añadir un elemento a un array no lo sobreescribimos directamente, si no que se crea una copia de dicho array y se le añade los valores que queremos agregar.
+
+Dentro de createNewTask validaremos que el valor que estemos ingresando no este previamente registrado en nuestra lista, en caso de estarlo no nos dejara ingresarlo, pero en caso de que no este si nos dejara agregarlo.
