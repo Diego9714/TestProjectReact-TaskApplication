@@ -21,3 +21,7 @@ Luego crearemos una funcion (esta se llamada createNewTask) que se encargara de 
 IMPORTANTE: Recordemos que en react cuando queremos añadir un elemento a un array no lo sobreescribimos directamente, si no que se crea una copia de dicho array y se le añade los valores que queremos agregar.
 
 Dentro de createNewTask validaremos que el valor que estemos ingresando no este previamente registrado en nuestra lista, en caso de estarlo no nos dejara ingresarlo, pero en caso de que no este si nos dejara agregarlo.
+
+# LocalStorage
+
+Revisar seccion de localstorage nuevamente para tomar notas
